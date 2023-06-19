@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class ServerProperties {
-    String contexPath;
+    String contextPath;
     int port;
 }
 
