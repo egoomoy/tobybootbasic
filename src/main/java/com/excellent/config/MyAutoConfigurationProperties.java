@@ -1,6 +1,6 @@
 package com.excellent.config;
 
-import org.springframework.context.annotation.Import;
+import org.springframework.stereotype.Component;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Import(MyAutoConfigImportSelector.class)
-public @interface EnableMyAutoConfiguration {
+@Component
+public @interface MyAutoConfigurationProperties {
+    String prefix();
 }

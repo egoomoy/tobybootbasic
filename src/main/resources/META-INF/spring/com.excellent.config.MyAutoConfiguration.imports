@@ -2,4 +2,5 @@ com.excellent.config.autoconfig.TomcatWebServerConfig
 com.excellent.config.autoconfig.JettyWebServerConfig
 com.excellent.config.autoconfig.DispatcherServletConfig
 com.excellent.config.autoconfig.PropertyPlaceholderConfig
-com.excellent.config.autoconfig.ServerPropertiesConfig
+com.excellent.config.autoconfig.PropertyPostProcessorConfig
+com.excellent.config.autoconfig.ServerProperties
