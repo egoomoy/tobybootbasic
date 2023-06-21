@@ -1,12 +1,17 @@
 package com.excellent.excellent;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SimpleHelloService implements HelloService{
+@RequiredArgsConstructor
+public class SimpleHelloService implements HelloService {
+
+    private final HelloRepository helloRepository;
 
     @Override
     public String hello(String name) {
-        return "Hello "+name;
+        helloRepository.increaseCount(name);
+        return "Hello " + name;
     }
 }
