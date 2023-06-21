@@ -1,11 +1,9 @@
 package com.excellent.excellent;
 
-import com.excellent.config.MySpringBootApplication;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
-//@SpringBootApplication
-@MySpringBootApplication
+@SpringBootApplication
 public class ExcellentApplication {
     public static void main(String[] args) {
         SpringApplication.run(ExcellentApplication.class, args);

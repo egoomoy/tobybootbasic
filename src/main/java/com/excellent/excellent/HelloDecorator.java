@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 @Primary
-public class HelloDecorator implements HelloService{
+public class HelloDecorator implements HelloService {
 
     private final HelloService helloService;
 
     @Override
     public String hello(String name) {
-        return "***" + helloService.hello(name);
+        return helloService.hello(name);
     }
 }

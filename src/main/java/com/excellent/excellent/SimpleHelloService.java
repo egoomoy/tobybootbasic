@@ -11,7 +11,7 @@ public class SimpleHelloService implements HelloService {
 
     @Override
     public String hello(String name) {
-        helloRepository.increaseCount(name);
+//        helloRepository.increaseCount(name);
         return "Hello " + name;
     }
 }
